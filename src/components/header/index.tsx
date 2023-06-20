@@ -1,6 +1,6 @@
-import { SubHeader } from "./subHeader";
-import { Accounnts } from "./accounts";
-import { CardInputAndOutput } from "./cardInputandOutput";
+// import { SubHeader } from "./subHeader";
+// import { Accounnts } from "./accounts";
+// import { CardInputAndOutput } from "./cardInputandOutput";
 import { Welcome } from "../welcome";
 export const Header = () => {
   return (

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import nubank from "../../assets/bank/nubank.svg";
 import mercado from "../../assets/bank/mercado-pago-logo.svg";
 import digio from "../../assets/bank/digio-logo.svg";
@@ -11,8 +10,6 @@ interface TYPEBANKS {
 }
 
 export const Balances = () => {
-  const [logo, setLogo] = useState<string>("nubank");
-
   const banks: Array<TYPEBANKS> = [
     {
       id: 1,
@@ -69,7 +66,7 @@ export const Balances = () => {
           </h2>
         </div>
       )}
-      <button className="w-full bg-btnLite text-white h-12 rounded text-btnText font-Nunito font-extrabold mt-3">
+      <button className="w-full bg-btnLite h-12 rounded text-btnText font-Nunito font-extrabold mt-3">
         Adicionar cartão
       </button>
     </div>
