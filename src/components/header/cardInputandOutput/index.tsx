@@ -1,7 +1,3 @@
-import {
-  BsFillArrowUpCircleFill,
-  BsFillArrowDownCircleFill
-} from "react-icons/bs";
 import { AiOutlineArrowUp, AiOutlineArrowDown } from "react-icons/ai";
 
 interface PROPSVALUE {
