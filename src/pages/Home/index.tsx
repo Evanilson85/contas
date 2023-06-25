@@ -4,6 +4,9 @@ import { CardValueAll } from "../../components/Cards/cardValueAll";
 import eye from "../../assets/icons/eye.svg";
 import hideEye from "../../assets/icons/hideEye.svg";
 import { Balances } from "../../components/balances";
+import { ContainerMain } from "../../components/container";
+import { CardCredit } from "../../components/Cards/cardCredit";
+import { History } from "../../components/History";
 
 export const Home = () => {
   const [eyeShow, setEyeShow] = useState(false);
@@ -14,7 +17,7 @@ export const Home = () => {
 
   return (
     <>
-      <div className="bg-white w-95 min-h-120 mx-auto rounded relative bottom-10 pt-1 px-4 shadow-lg">
+      <ContainerMain>
         <div className="flex items-center justify-between">
           <CardValueAll />
           <div className="w-9">
@@ -27,7 +30,37 @@ export const Home = () => {
           </div>
         </div>
         <Balances />
-      </div>
+      </ContainerMain>
+      <ContainerMain>
+        <h1 className="text-black font-Nunito text-base font-extrabold mt-3">
+          Cartões de crédito
+        </h1>
+        <CardCredit />
+      </ContainerMain>
+
+      <ContainerMain padd>
+        <h1 className="text-black font-Nunito text-base font-extrabold mt-3">
+          Historico do mês
+        </h1>
+        <History
+          name="Alimetação"
+          date="25 jun"
+          category="entrada"
+          value="200,00"
+        />
+        <History
+          name="Pagamento"
+          date="25 jun"
+          category="entrada"
+          value="200,00"
+        />
+        <History
+          name="Alimetação"
+          date="25 jun"
+          category="despesa"
+          value="200,00"
+        />
+      </ContainerMain>
     </>
   );
 };
