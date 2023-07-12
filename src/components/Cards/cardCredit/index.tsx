@@ -1,8 +1,8 @@
 import nubank from "../../../assets/bank/nubank.svg";
 import mercado from "../../../assets/bank/mercado-pago-logo.svg";
-import digio from "../../../assets/bank/digio-logo.svg";
+// import digio from "../../../assets/bank/digio-logo.svg";
 import { ComponentCardValue } from "./componentCardValue";
-import { AiOutlinePlus } from "react-icons/ai";
+// import { AiOutlinePlus } from "react-icons/ai";
 
 interface TYPEBANKS {
   id: number;
