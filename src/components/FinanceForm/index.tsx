@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 export const FinanceForm = () => {
   const [value, setValue] = useState("");
   const [type, setType] = useState("expense");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     // Aqui você pode enviar os dados para um servidor ou executar qualquer outra lógica de manipulação dos dados
     console.log("Value:", value);
